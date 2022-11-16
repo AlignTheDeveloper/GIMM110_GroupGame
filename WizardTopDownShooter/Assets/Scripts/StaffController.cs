@@ -27,6 +27,7 @@ public class StaffController : MonoBehaviour
             {
                 shotCounter = timeBetweenShots;
                 BulletController newBullet =Instantiate(bullet, firePoint.position, firePoint.rotation) as BulletController;
+                //newBullet.transformBullet = transform.rotation.x = 90;
                 newBullet.speed = bulletSpeed;
             }
         }
